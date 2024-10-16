@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_erp__employees
+    description: Tabela com dados brutos sobre funcionários
+    columns:
+      - name: employee_sk
+        description: Chave única do funcionário.
+
+      - name: manager_fk
+        description: Referência ao gerente do funcionário.
+
+      - name: full_name
+        description: Nome completo do funcionário.
+
+      - name: position_title
+        description: Cargo ou título do funcionário.
+
+      - name: birthdate
+        description: Data de nascimento do funcionário.
+
+      - name: hiredate
+        description: Data de contratação do funcionário.
+
+      - name: city
+        description: Cidade onde o funcionário reside.
+        
+      - name: region
+        description: Região onde o funcionário reside.
+        
+      - name: country
+        description: País onde o funcionário reside.

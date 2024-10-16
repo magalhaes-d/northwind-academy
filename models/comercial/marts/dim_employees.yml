@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: Tabela de dimensão com informações sobre funcionários.
+    columns:
+      - name: employee_sk
+        description: Chave única do funcionário.
+
+      - name: manager_fk
+        description: Referência ao gerente do funcionário.
+
+      - name: full_name
+        description: Nome completo do funcionário.
+
+      - name: manager_name
+        description: Nome completo do gerente do funcionário.
+
+      - name: position_title
+        description: Cargo ou título do funcionário.
+
+      - name: birthdate
+        description: Data de nascimento do funcionário.
+
+      - name: hiredate
+        description: Data de contratação do funcionário.
+
+      - name: city
+        description: Cidade onde o funcionário reside.
+
+      - name: region
+        description: Região onde o funcionário reside.
+
+      - name: country
+        description: País onde o funcionário reside.
+        
