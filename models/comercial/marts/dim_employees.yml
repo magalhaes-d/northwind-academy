@@ -6,6 +6,9 @@ models:
     columns:
       - name: employee_sk
         description: Chave única do funcionário.
+        data_tests:
+          - unique
+          - not_null
 
       - name: manager_fk
         description: Referência ao gerente do funcionário.

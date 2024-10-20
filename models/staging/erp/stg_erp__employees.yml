@@ -2,11 +2,14 @@ version: 2
 
 models:
   - name: stg_erp__employees
-    description: Tabela com dados brutos sobre funcionários
+    description: Tabela com dados brutos sobre funcionários.
     columns:
       - name: employee_sk
         description: Chave única do funcionário.
-
+        data_tests:
+          - unique
+          - not_null
+          
       - name: manager_fk
         description: Referência ao gerente do funcionário.
 

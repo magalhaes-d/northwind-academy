@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_erp__products
+    description: Tabela com dados brutos sobre produtos.
+    columns:
+      - name: product_sk
+        description: Chave única do produto.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: supplier_fk
+        description: Chave estrangeira que referencia o fornecedor.
+
+      - name: category_fk
+        description: Chave estrangeira que referencia a categoria do produto.
+
+      - name: product_name
+        description: Nome do produto.
+
+      - name: quantity_per_unit
+        description: Quantidade de itens por unidade do produto.
+
+      - name: unit_price
+        description: Preço unitário do produto.
+
+      - name: units_in_stock
+        description: Quantidade de unidades em estoque.
+
+      - name: units_on_order
+        description: Quantidade de unidades encomendadas.
+
+      - name: reorder_level
+        description: Nível de estoque mínimo para reabastecimento.
+
+      - name: is_discontinued
+        description: Indica se o produto foi descontinuado.

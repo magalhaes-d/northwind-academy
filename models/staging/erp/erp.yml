@@ -13,3 +13,28 @@ sources:
             data_tests:
               - unique
               - not_null
+      
+      - name: product
+        description: Tabela fonte com informações dos produtos da Northwind.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          
+      - name: category
+        description: Tabela fonte com informações das categorias dos funcionários da Northwind.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          
+      - name: supplier
+        description: Tabela fonte com informações dos fornecedores da Northwind.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          
