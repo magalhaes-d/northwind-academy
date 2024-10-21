@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_erp__orders_detail
+    description: Tabela com dados brutos sobre detalhes das ordens de compra.
+    columns:
+      - name: order_detail_sk
+        description: Chave única que combina as chaves estrangeiras order_fk e product_fk.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: order_fk
+        description: Chave estrangeira que referencia a ordem de compra.
+
+      - name: product_fk
+        description: Chave estrangeira que referencia o produto.
+
+      - name: discount
+        description: Percentual de desconto aplicado ao produto.
+
+      - name: unit_price
+        description: Preço unitário do produto na ordem.
+
+      - name: quantity
+        description: Quantidade de unidades do produto na ordem.

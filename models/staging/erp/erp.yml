@@ -37,4 +37,19 @@ sources:
             data_tests:
               - unique
               - not_null
+
+      - name: _order_
+        description: Tabela fonte com informações dos fornecedores da Northwind.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+
+      - name: orderdetail
+        description: Tabela fonte com informações dos fornecedores da Northwind.
+        columns:
+          - name: orderid
+            data_tests:
+              - not_null
           

@@ -4,14 +4,11 @@ models:
   - name: dim_products
     description: Tabela de dimensão com informações sobre produtos
     columns:
-      - name: products_sk
+      - name: product_sk
         description: Chave única do produto.
         data_tests:
           - unique
           - not_null
-
-      - name: product_sk
-        description: Chave secundária do produto.
         
       - name: product_name
         description: Nome do produto.
