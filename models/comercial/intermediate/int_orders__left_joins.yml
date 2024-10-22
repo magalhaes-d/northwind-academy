@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: int_orders__left_joins
+    description: Tabela com informações detalhadas sobre ordens de compra.
+    columns:
+      - name: order_detail_sk
+        description: Chave única da ordem de compra.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: order_fk
+        description: Chave estrangeira que referencia a ordem de compra.
+
+      - name: product_fk
+        description: Chave estrangeira que referencia o produto.
+
+      - name: customer_fk
+        description: Chave estrangeira que referencia o cliente.
+
+      - name: employee_fk
+        description: Chave estrangeira que referencia o funcionário responsável pela ordem.
+
+      - name: ship_via
+        description: Método de envio utilizado.
+
+      - name: order_date
+        description: Data em que a ordem foi realizada.
+
+      - name: required_date
+        description: Data prevista para entrega.
+
+      - name: shipped_date
+        description: Data em que a ordem foi enviada.
+
+      - name: discount
+        description: Percentual de desconto aplicado.
+
+      - name: unit_price
+        description: Preço unitário do produto.
+
+      - name: quantity
+        description: Quantidade de unidades do produto na ordem.
+
+      - name: gross_sales
+        description: Valor bruto das vendas.
+
+      - name: net_sales
+        description: Valor líquido das vendas, após descontos.
+
+      - name: fright_per_product
+        description: Custo do frete por produto.
+
+      - name: ship_name
+        description: Nome da empresa ou pessoa destinatária.
+
+      - name: ship_city
+        description: Cidade para onde a ordem foi enviada.
+
+      - name: ship_region
+        description: Região para onde a ordem foi enviada.
+
+      - name: ship_country
+        description: País para onde a ordem foi enviada.
+
+      - name: has_discount
+        description: Indica se há desconto aplicado na ordem.

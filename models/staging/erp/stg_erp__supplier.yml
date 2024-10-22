@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__supplier
+    description: Tabela com dados brutos sobre fornecedores.
+    columns:
+      - name: supplier_sk
+        description: Chave única do fornecedor.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: supplier_company_name
+        description: Nome da empresa fornecedora.
+
+      - name: supplier_city
+        description: Cidade onde a empresa fornecedora está localizada.
+
+      - name: supplier_country
+        description: País onde a empresa fornecedora está localizada.
